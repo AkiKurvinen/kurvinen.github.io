@@ -79,7 +79,7 @@ main i {
 }
 .wrapper div + div {
   flex: 3;
-  margin-left: 1em;
+  margin-left: 1.5em;
 }
 .skills {
   padding: 0;
@@ -96,15 +96,17 @@ main i {
   margin-left: -1em;
   /* text-shadow: 1px 1px 2px black; */
 }
-.hobbies {
+.row {
   display: flex;
 }
-.hobbies p {
+.row p {
   flex: 1;
-  padding-right: 1em;
+  padding-right: 1.5em;
   hyphens: auto;
 }
-
+.row p b {
+  hyphens: none;
+}
 .skills li span {
   color: rgb(126, 185, 185);
 }
@@ -136,5 +138,8 @@ main i {
   }
   .wrapper div + div {
     margin: 0;
+  }
+  .row {
+    display: block;
   }
 }
